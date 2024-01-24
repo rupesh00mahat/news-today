@@ -13,6 +13,7 @@ export default class  NewsContainer extends Component {
         loading: true,
         page: 1,
         totalResults: 0,
+        pageSize: 10,
       }
     }
     
@@ -21,7 +22,7 @@ export default class  NewsContainer extends Component {
     {
       this.setState({loading: true});
 
-      let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${this.props.apikey}&page=${this.state.page}&pageSize=${this.state.pageSize}&category=${this.props.category}`;
+      let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=50b864b49516482cb42fed1194d1578a&page=${this.state.page}&pageSize=${this.state.pageSize}&category=${this.props.category}`;
       this.setState({loading: true});
 
       const response = await fetch(url);
@@ -47,10 +48,6 @@ export default class  NewsContainer extends Component {
      this.updateData(this.state.page-1);
     }
 
-
-
-
-
     render()
     {
       return <div className='container '>
@@ -65,6 +62,8 @@ export default class  NewsContainer extends Component {
       <div className='container'>
         <div className='row'>
         {!this.state.loading && this.state.article.map((article, idx)=>{
+                    console.log(this.state.article);
+
       return(
            <Fragment>
               { <div key={idx} className='col-md-3 mx-4 my-4'>
