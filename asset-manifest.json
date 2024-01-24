@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/news-today/static/js/main.73268358.js",
+    "static/media/loading-gif.gif": "/news-today/static/media/loading-gif.803f24369a085e35482e.gif",
+    "index.html": "/news-today/index.html",
+    "main.73268358.js.map": "/news-today/static/js/main.73268358.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.73268358.js"
+  ]
+}
