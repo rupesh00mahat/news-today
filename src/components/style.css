@@ -1,0 +1,45 @@
+.news-today-article-content{
+    height: 220px;
+    margin: 30px;
+    display: flex;
+    border-radius: 15px;
+    
+    background-color: white;
+}
+body{
+    background-color: #EDF2F8;
+}
+
+img{
+    height: 100%;
+    min-width: 40%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.news-today-articles{
+    width: 80vw;
+}
+
+.news-today-content-area{
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.news-today-articles h2{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.news-today-articles p{
+    font-size: 15px;
+    color: rgb(143, 135, 135);
+}
+.news-today-news-source{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.news-today-news-date{
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgb(143, 135, 135);
+}
